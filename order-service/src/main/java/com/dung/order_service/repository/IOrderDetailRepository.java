@@ -1,0 +1,13 @@
+package com.dung.order_service.repository;
+
+
+import com.dung.order_service.entity.Order;
+import com.dung.order_service.entity.OrderDetail;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface IOrderDetailRepository extends JpaRepository<OrderDetail,Integer> {
+
+    List<OrderDetail> findByOrderId(int orderId);
+}

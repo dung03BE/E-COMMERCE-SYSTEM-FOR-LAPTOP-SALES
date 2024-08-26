@@ -1,0 +1,16 @@
+product:
+  service:
+    url: http://localhost:8081/api/v1
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: admin
